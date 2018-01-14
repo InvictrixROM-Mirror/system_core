@@ -11,8 +11,8 @@ import /vendor/etc/init/hw/init.${ro.hardware}.rc
 import /init.usb.configfs.rc
 import /init.${ro.zygote}.rc
 
-# Include Carbon's extra init file
-import /init.carbon.rc
+# Include our extra init file
+import /init.invictrix.rc
 
 
 on early-init
