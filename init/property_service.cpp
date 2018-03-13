@@ -764,6 +764,8 @@ void load_system_props() {
     /* Weaken property override security during execution of the vendor init extension. */
     weaken_prop_override_security = true;
 
+    load_properties_from_file("/system/build.prop", "ro.control_privapp_permissions");
+
     /* update with vendor-specific property runtime
      * overrides
      */
